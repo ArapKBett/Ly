@@ -1,0 +1,32 @@
+/* Custom styles for exquisite touches */
+body {
+  scroll-behavior: smooth;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.faq-item p {
+  transition: all 0.3s ease;
+}
+
+.faq-item p.hidden {
+  display: none;
+}
+
+/* Parallax background effect */
+#hero {
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Card hover effects */
+.bg-gray-700:hover {
+  box-shadow: 0 8px 16px rgba(0, 255, 209, 0.2);
+}
